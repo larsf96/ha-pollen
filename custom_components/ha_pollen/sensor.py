@@ -25,13 +25,13 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Optional(CONF_INCLUDE_DAYS, default=DEFAULT_INCLUDE_DAYS): cv.ensure_list,
 })
 
-def setup_platform(hass, config):
+def setup_platform(hass, config, add_entities, discovery_info=None):
     name = config.get(DEFAULT_NAME)
     region_ids = config.get(CONF_REGION_IDS)
     include_pollen = config.get(DEFAULT_INCLUDE_POLLEN)
     #include_days = config.get(DEFAULT_INCLUDE_DAYS)
 
-    add_devices([PollenSensorDE(DEFAULT_NAME, region_ids, include_pollen)])
+    add_entities([PollenSensorDE(DEFAULT_NAME, region_ids, include_pollen)], True)
 
 
 _LOGGER = logging.getLogger(__name__)
