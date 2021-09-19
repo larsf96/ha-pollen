@@ -1,0 +1,6 @@
+{
+    "name": "Pollen Information",
+    "country": ["DE"],
+    "render_readme": "true",
+    "iot_class": ["Assumed State", "Cloud Polling"] 
+  }
