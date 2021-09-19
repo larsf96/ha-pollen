@@ -1,0 +1,11 @@
+{
+    "domain": "ha_pollen",
+    "name": "Pollen Information Integration",
+    "documentation": "https://github.com/larsf96/ha-pollen",
+    "issue_tracker": "https://github.com/larsf96/ha-pollen/issues",
+    "version": "0.0.1",
+    "dependencies": [],
+    "codeowners": ["@larsf96"],
+    "iot_class": "cloud_polling",
+    "requirements": []
+  }
